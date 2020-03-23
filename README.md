@@ -30,6 +30,7 @@ STEP 2: Preprocessing.
 Generally, there are various processes. But, in this particular problem, we only need feature scaling. In this process, we scale the value of the features in a finite range (-1 and 1).
 
 FORMULA:
+
 	mu = mean(X);
 	s = max(X) - min(X);
 	X := (X - mu)./s;
@@ -39,6 +40,7 @@ STEP 3: Cost Function.
 The cost function is the measure of how much our model is wrong. We use MSE (Mean squared error). Use square to ignoring negative values. Divide by 2m instead of m (m is the number of training examples). Because when calculating the derivative of error 2 cancels out.
 
 FORMULA:
+
 	prediction = X*theta;
 	error = (prediction - y).^2;
 	J = (1/(2*m))*sum(error);
@@ -65,7 +67,9 @@ STEP 5: Prediction.
 Our theta is now modified by using it we can predict now. But first, we also scale the new features and then add 1 at the start of the new features array.
 
 FORMULA:
+
 	prediction = X*theta;
+	
 X here is array of new features including 1 at start.
 
 CONCLUSION.
