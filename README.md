@@ -20,11 +20,13 @@ LINEAR REGRESSION.
 Just to make it simple, I categories the building of the machine learning model into 5 steps. This is a simple model of house price prediction.
 
 STEP 1: Getting data.
+
 First, we collect data on a real-world example. In this problem, we have 27 examples of houses. The area in sqft., the number of rooms as features and prices as the labels.
 Features: The independent variables. (Input)
 Labels: The dependent variables. (Output)
 
 STEP 2: Preprocessing.
+
 Generally, there are various processes. But, in this particular problem, we only need feature scaling. In this process, we scale the value of the features in a finite range (-1 and 1).
 
 FORMULA:
@@ -33,6 +35,7 @@ FORMULA:
 	X := (X - mu)./s;
 
 STEP 3: Cost Function.
+
 The cost function is the measure of how much our model is wrong. We use MSE (Mean squared error). Use square to ignoring negative values. Divide by 2m instead of m (m is the number of training examples). Because when calculating the derivative of error 2 cancels out.
 
 FORMULA:
@@ -43,6 +46,7 @@ FORMULA:
 Theta is an array of numbers of the size one greater than the number of features.
 
 STEP 4: Gradient Descent.
+
 Gradient descent is a legend algorithm for optimizing the cost function. It decreases the value of theta in accordance with minimizing the cost function.
 
 FORMULA:
@@ -57,6 +61,7 @@ j_history is the record of cost function over the iterations.
 Plotting j_history with the number of iterations gives a decreasing curve.
 
 STEP 5: Prediction.
+
 Our theta is now modified by using it we can predict now. But first, we also scale the new features and then add 1 at the start of the new features array.
 
 FORMULA:
