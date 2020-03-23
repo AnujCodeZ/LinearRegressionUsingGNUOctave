@@ -73,10 +73,12 @@ FORMULA:
 X here is array of new features including 1 at start.
 
 CONCLUSION.
+
 Now you know what to do in general ML problems. Let's get going with scratch. This post not explaining the exact mathematics. You may be confused. It is the only generalization of the process of making a machine learning model.
 To better understanding go through the course of machine learning on Coursera.
 
 RESOURCE.
+
 Machine Learning course: https://www.coursera.org/learn/machine-learning
 
 					THANKS, AND KEEP CODING
