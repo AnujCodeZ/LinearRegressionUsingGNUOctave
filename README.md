@@ -52,6 +52,7 @@ STEP 4: Gradient Descent.
 Gradient descent is a legend algorithm for optimizing the cost function. It decreases the value of theta in accordance with minimizing the cost function.
 
 FORMULA:
+
 	for i=0:epochs
 		prediction = X*theta;
 		theta = theta - alpha*(1/m)*sum((prediction - y).*X);
@@ -81,4 +82,4 @@ RESOURCE.
 
 Machine Learning course: https://www.coursera.org/learn/machine-learning
 
-					THANKS, AND KEEP CODING
+	THANKS, AND KEEP CODING
